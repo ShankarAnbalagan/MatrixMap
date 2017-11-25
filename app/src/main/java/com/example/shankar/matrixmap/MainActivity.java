@@ -2,8 +2,8 @@ package com.example.shankar.matrixmap;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.util.Log;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         gridView = findViewById(R.id.gridview1);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, numbers);
 
         gridView.setAdapter(adapter);
